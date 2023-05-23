@@ -1,0 +1,47 @@
+/* 初始化样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f2f4f5;
+	padding: 15px;
+}
+/* 为弹出层表单指定样式 */
+/* .layui-form{
+	width: 450px;
+	margin-top: 20px;
+} */
+/* 裁剪区域 */
+/* 封面容器的样式 */
+.cover-box {
+  display: flex;
+}
+
+/* 左侧裁剪区域的样式 */
+.cover-left {
+  width: 400px;
+  height: 280px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+/* 右侧盒子的样式 */
+.cover-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 预览区域的样式 */
+.img-preview {
+  width: 200px;
+  height: 140px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#form-edit{
+	width: 950px;
+	margin-top: 10px;
+}

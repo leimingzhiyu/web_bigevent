@@ -3,10 +3,12 @@
 // 在这个函数中，可以拿到我们给Ajax提供的配置对象
 $.ajaxPrefilter(function(options) {
 	// 在发起真正的 Ajax 请求之前，统一拼接请求的根路径
-	options.url = 'http://www.liulongbin.top:3007' + options.url
+	// options.url = 'http://www.liulongbin.top:3007' + options.url
+	options.url = 'http://127.0.0.1:3007' + options.url
 	if (options.url.indexOf('/my/') !== -1) {
 		options.headers = {
-				Authorization: localStorage.getItem('token') || ''
+				Authorization: localStorage.getItem('token') || '',
+				// 'X-Content-Type-Options': nosniff
 			},
 			// 不论成功还是失败，最终都会调用 complete 回调函数
 			options.complete = function(res) {

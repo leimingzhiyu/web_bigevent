@@ -1,0 +1,20 @@
+/* 初始化样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f2f4f5;
+	padding: 15px;
+}
+/* 添加类别按钮样式 */
+.layui-card-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* 为弹出层表单指定样式 */
+.layui-form{
+	width: 450px;
+	margin-top: 20px;
+}
